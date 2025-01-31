@@ -1,28 +1,28 @@
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 
 function App() {
   return (
-    <div className="App bg-blue-400 min-h-screen flex flex-col items-center justify-center text-white">
-      <header className="text-center p-6">
-        <h1 className="text-4xl font-bold">Welcome to Doraemon's World</h1>
-        <p className="text-lg mt-2">Enjoy adventures with Doraemon and friends!</p>
+    <div className="container-fluid p-0 m-0">
+      <header className="bg-dark text-white text-center py-3">
+        <h1 className="h3">Welcome to Doraemon's World</h1>
       </header>
-      <img 
-        src="https://i.pinimg.com/736x/83/ea/2b/83ea2bfa6501592ce85e727def278f40.jpg" 
-        alt="Doraemon" 
-        className="w-48 h-48 rounded-full shadow-lg border-4 border-white"
-      />
-      <div className="mt-6 text-center">
-        <p className="text-xl">Doraemon is a robotic cat from the future who helps Nobita with his gadgets.</p>
-        <a 
-          className="mt-4 inline-block px-6 py-2 bg-white text-blue-500 font-semibold rounded-lg shadow-md hover:bg-gray-200"
-          href="https://en.wikipedia.org/wiki/Doraemon"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn More
-        </a>
-      </div>
+      <section 
+        className="hero-section d-flex flex-column justify-content-center align-items-center text-white text-center position-relative"
+        style={{ 
+          background: `url('https://media1.tenor.com/m/g8ZWXSTKOgoAAAAC/find-out.gif') center/cover no-repeat`,
+          minHeight: '100vh'
+        }}
+      >
+        <div className="overlay position-absolute top-0 start-0 w-100 h-100" style={{ backgroundColor: 'rgba(0, 0, 0, 0.5)' }}></div>
+        <div className="container position-relative">
+          <h2 className="display-4 fw-bold text-warning">Doraemon's Adventures</h2>
+          <p className="lead fw-bold text-light bg-dark p-2 rounded">Doraemon is a robotic cat from the future who helps Nobita with his gadgets.</p>
+        </div>
+      </section>
+      <footer className="bg-dark text-white text-center py-3">
+        <p className="mb-0">&copy; 2025 Doraemon Fan Page</p>
+      </footer>
     </div>
   );
 }
